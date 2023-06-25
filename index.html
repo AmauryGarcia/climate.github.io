@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amaury Garcia">
+    <meta name="keywords" content="clima,tiempo,lluvias,clima hoy">
+    <meta name="description" content="Climate es una aplicación precisa y fácil de usar que te brinda información actualizada sobre el clima en tiempo real. Con una interfaz intuitiva, te proporciona detalles como temperatura, humedad, velocidad del viento y pronóstico extendido.">
+    <link rel="stylesheet" href="style.css">
+    <title>App del clima</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <h1>Climate</h1>
+          <ol class="nav">
+            <il class="item"><a href="https://blog.tutiempo.net/" target="_blank">Blog</a></il>
+          </ol>
+      </nav>
+    </header>
+    
+      <section class="main">
+      <div class="container">
+        <h2>Search the climate</h2>
+
+        <form>
+          <input type="text" id="city-input" placeholder="Enter City" />
+          <input type="submit" value="Get Weather" />
+        </form>
+
+        <div id="weather-data">
+          <div class="icon">
+            <!-- <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon"> -->
+          </div>
+          <div class="temperature"></div>
+          <div class="description"></div>
+          <div class="details">
+            <!-- <div>Feels like: 23°C</div>
+                  <div>Humidity: 40%</div>
+                  <div>Wind speed: 5 m/s</div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <script src="main.js"></script>
+    <script src="translate.js"></script>
+</body>
+</html>
